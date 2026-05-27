@@ -8,7 +8,7 @@ public class Proceso {
     private TipoEstado tipoEstado;
     private TipoFinalizacion tipoFinalizacion;
     private Usuario finalizadoPor;
-    private (hay q poner el tipo de tad) eventos;
+    //private (hay q poner el tipo de tad) eventos;
 
 
 
