@@ -1,4 +1,4 @@
-package uy.edu.um.doors;
+package obligatorio2026.src.main.java.uy.edu.um.doors;
 
 import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
