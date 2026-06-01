@@ -5,10 +5,10 @@ public class Proceso {
     private String nombre;
     private Usuario propietario;
     private int prioridad;
-    private TipoEstado tipoEstado = TipoEstado.NEW;
+    private TipoEstado tipoEstado;
     private TipoFinalizacion tipoFinalizacion;
     private Usuario finalizadoPor;
-    private uy.edu.um.tad.list.MyLinkedListImpl eventos;
+    // private (hay q poner el tipo de tad) eventos;
 
 
 
