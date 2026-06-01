@@ -1,8 +1,22 @@
 package obligatorio2026.src.main.java.uy.edu.um.doors;
+import obligatorio2026.src.main.resources.Proceso;
+import uy.edu.um.tad.heap.MyHeapImpl;
+import uy.edu.um.tad.queue.MyQueueImpl;
+import uy.edu.um.tad.stack.MyStackImpl;
+import uy.edu.um.tad.hash.MyHashImpl;
+import obligatorio2026.src.main.resources.Usuario;
+import obligatorio2026.src.main.resources.Eventos;
 
 public class ProcessManagerImpl implements ProcessManager{
 
     //EL DISEÑO DE LA ESTRUCTURA DE ALMACENAMIENTO DEBE IMPLEMENTARSE EN ESTA CLASE EN RELACIÓN CON LAS ENTIDADES QUE DEFINA
+
+    // private MyHashImpl<ACA VA ALGO> usuarios = new MyHashImpl<>();
+    private MyQueueImpl<Proceso> procesosNuevos = new MyQueueImpl();
+    private MyHeapImpl<Proceso> porcesosProsesando= new MyHeapImpl<>();
+    private Proceso running = null;
+    private MyStackImpl <Proceso> procesosFinalizados = new MyStackImpl<>();
+
 
     @Override
     public void loadProcessAndUserData(String processCsvPath, String usersCsvPath) {

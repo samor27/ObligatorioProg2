@@ -1,6 +1,7 @@
 package obligatorio2026.src.main.resources;
+import uy.edu.um.tad.list.MyLinkedListImpl;
 
-public class Proceso {
+public class Proceso implements Comparable<Proceso> {
     private int pid;
     private String nombre;
     private Usuario propietario;
@@ -8,8 +9,15 @@ public class Proceso {
     private TipoEstado tipoEstado;
     private TipoFinalizacion tipoFinalizacion;
     private Usuario finalizadoPor;
-    // private (hay q poner el tipo de tad) eventos;
+    private MyLinkedListImpl<Eventos> eventos = new MyLinkedListImpl<>();
 
+    @Override
+    public int compareTo(Proceso o) {
+        if (this.pid > o.pid){return 1;}
+        if (this.pid < o.pid){return -1;}
+        return 0;
+
+    }
 
 
     public enum TipoEstado{

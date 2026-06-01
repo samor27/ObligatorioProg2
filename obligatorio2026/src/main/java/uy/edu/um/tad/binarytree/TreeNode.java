@@ -1,7 +1,7 @@
 /**
  *
  */
-package uy.edu.um.tad.binarytree;
+package obligatorio2026.src.main.java.uy.edu.um.tad.binarytree;
 
 import lombok.Getter;
 import lombok.Setter;
