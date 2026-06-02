@@ -1,9 +1,9 @@
 package uy.edu.um.tad.heap;
 
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
 public class EmptyHeapException extends RuntimeException {
+    public EmptyHeapException() {
+    }
+
     public EmptyHeapException(String message) {
         super(message);
     }

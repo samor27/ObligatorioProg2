@@ -1,4 +1,4 @@
-package obligatorio2026.src.main.java.uy.edu.um.doors;
+package uy.edu.um.doors;
 
 public interface ProcessManager {
     public static final int MAX_FINISHED_PROCESS_ON_RAM = 3;

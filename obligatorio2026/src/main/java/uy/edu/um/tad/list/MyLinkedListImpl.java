@@ -1,17 +1,21 @@
 package uy.edu.um.tad.list;
 
-import lombok.Getter;
-
 public class MyLinkedListImpl<T> implements MyList<T>{
 
-    @Getter
     protected Node<T> first;
-    @Getter
     protected Node<T> last;
 
     public MyLinkedListImpl() {
         this.first = null;
         this.last = null;
+    }
+
+    public Node<T> getFirst() {
+        return first;
+    }
+
+    public Node<T> getLast() {
+        return last;
     }
 
     @Override

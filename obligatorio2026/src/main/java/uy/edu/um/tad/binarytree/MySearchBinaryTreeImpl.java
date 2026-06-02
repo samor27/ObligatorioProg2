@@ -3,15 +3,18 @@
  */
 package uy.edu.um.tad.binarytree;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 import uy.edu.um.tad.list.MyLinkedListImpl;
 import uy.edu.um.tad.list.MyList;
 
-@NoArgsConstructor
 public class MySearchBinaryTreeImpl<K extends Comparable<K>, V> implements MySearchBinaryTree<K, V> {
-    @Getter
     private TreeNode<K, V> root;
+
+    public MySearchBinaryTreeImpl() {
+    }
+
+    public TreeNode<K, V> getRoot() {
+        return root;
+    }
 
     @Override
     public void add(K key, V value) {

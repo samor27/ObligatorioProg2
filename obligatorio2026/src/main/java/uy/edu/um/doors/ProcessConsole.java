@@ -1,4 +1,4 @@
-package obligatorio2026.src.main.java.uy.edu.um.doors;
+package uy.edu.um.doors;
 
 import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ProcessConsole {
     private final ProcessManager processManager;
 
-    public ProcessConsole(ProcessManager processManager) {
+    public ProcessConsole(uy.edu.um.doors.ProcessManagerImpl processManager) {
         this.processManager = processManager;
     }
 

@@ -1,7 +1,7 @@
-package obligatorio2026.src.main.java.uy.edu.um;
+package uy.edu.um;
 
-import obligatorio2026.src.main.java.uy.edu.um.doors.ProcessConsole;
-import obligatorio2026.src.main.java.uy.edu.um.doors.ProcessManagerImpl;
+import uy.edu.um.doors.ProcessConsole;
+import uy.edu.um.doors.ProcessManagerImpl;
 
 public class Main {
     public static void main(String[] args) {

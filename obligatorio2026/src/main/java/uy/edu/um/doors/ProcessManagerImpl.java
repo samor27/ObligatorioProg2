@@ -1,11 +1,11 @@
-package obligatorio2026.src.main.java.uy.edu.um.doors;
-import obligatorio2026.src.main.resources.Proceso;
+package uy.edu.um.doors;
+
+import uy.edu.um.resources.Proceso;
 import uy.edu.um.tad.heap.MyHeapImpl;
 import uy.edu.um.tad.queue.MyQueueImpl;
 import uy.edu.um.tad.stack.MyStackImpl;
-import uy.edu.um.tad.hash.MyHashImpl;
-import obligatorio2026.src.main.resources.Usuario;
-import obligatorio2026.src.main.resources.Eventos;
+import uy.edu.um.resources.Usuario;
+import uy.edu.um.resources.Eventos;
 
 public class ProcessManagerImpl implements ProcessManager{
 

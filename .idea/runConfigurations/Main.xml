@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Main" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="uy.edu.um.Main" />
+    <module name="ObligatorioProg2" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/obligatorio2026" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
