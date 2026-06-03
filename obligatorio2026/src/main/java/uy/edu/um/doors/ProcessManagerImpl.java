@@ -7,6 +7,10 @@ import uy.edu.um.tad.hash.MyHashImpl;
 import obligatorio2026.src.main.resources.Usuario;
 import obligatorio2026.src.main.resources.Eventos;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class ProcessManagerImpl implements ProcessManager{
 
     //EL DISEÑO DE LA ESTRUCTURA DE ALMACENAMIENTO DEBE IMPLEMENTARSE EN ESTA CLASE EN RELACIÓN CON LAS ENTIDADES QUE DEFINA
@@ -20,7 +24,22 @@ public class ProcessManagerImpl implements ProcessManager{
 
     @Override
     public void loadProcessAndUserData(String processCsvPath, String usersCsvPath) {
-        System.out.println("IMPLEMENTAR");
+        try (BufferedReader br = new BufferedReader(new FileReader(usersCsvPath))){
+            String linea;
+            boolean primera = true;
+            while ((linea = br.readLine())!= null){
+                if (primera == true) {primera = false; continue;}
+                String[] separacion = linea.split(";");
+
+                int uid = Integer.parseInt(separacion[0]);
+                String alias = separacion[1];
+                Usuario.TipoUsuario tipo = Usuario.TipoUsuario.valueOf(separacion[2]);
+                new Usuario(uid, alias, tipo);
+                // hay que añadir el usuario al hash
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
